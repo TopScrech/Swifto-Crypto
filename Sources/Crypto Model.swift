@@ -3,13 +3,13 @@ import CryptoKit
 
 @Observable
 public final class CryptoModel {
-    let privateKey = P521.KeyAgreement.PrivateKey()
+    public let privateKey = P521.KeyAgreement.PrivateKey()
     
-    var publicKey: P521.KeyAgreement.PublicKey {
+    public var publicKey: P521.KeyAgreement.PublicKey {
         privateKey.publicKey
     }
     
-    var receivedPublicKey: P521.KeyAgreement.PublicKey?
+    public var receivedPublicKey: P521.KeyAgreement.PublicKey?
     
     func sharedSymmetricKey(privateKey: P521.KeyAgreement.PrivateKey, publicKey: P521.KeyAgreement.PublicKey) -> SymmetricKey {
         let sharedSecret = try! privateKey.sharedSecretFromKeyAgreement(with: publicKey)
