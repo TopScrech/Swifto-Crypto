@@ -13,15 +13,15 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Swifto Crypto",
-            targets: ["SafariCover"]),
+            name: "SwiftoCrypto",
+            targets: ["SwiftoCrypto"]),
     ],
     targets: [
         .target(
-            name: "SafariCover",
+            name: "SwiftoCrypto",
             dependencies: [],
             linkerSettings: [
-                .linkedFramework("SafariServices")
+                .linkedFramework("SwiftoCrypto")
             ]
         )
     ]
