@@ -13,7 +13,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "SwiftoCrypto",
+            name: "Swifto Crypto",
             targets: ["SwiftoCrypto"]),
     ],
     targets: [
@@ -21,7 +21,7 @@ let package = Package(
             name: "SwiftoCrypto",
             dependencies: [],
             linkerSettings: [
-                .linkedFramework("SwiftoCrypto")
+                .linkedFramework("CryptoKit")
             ]
         )
     ]
