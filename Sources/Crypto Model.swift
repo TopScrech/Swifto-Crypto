@@ -11,6 +11,10 @@ public final class CryptoModel {
     
     public var receivedPublicKey: P521.KeyAgreement.PublicKey?
     
+    public init() {
+        
+    }
+    
     func sharedSymmetricKey(privateKey: P521.KeyAgreement.PrivateKey, publicKey: P521.KeyAgreement.PublicKey) -> SymmetricKey {
         let sharedSecret = try! privateKey.sharedSecretFromKeyAgreement(with: publicKey)
         
