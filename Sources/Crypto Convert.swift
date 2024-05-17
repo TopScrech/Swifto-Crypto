@@ -1,7 +1,7 @@
 import Foundation
 import CryptoKit
 
-extension CryptoModel {
+public extension CryptoModel {
     func publicKeyToString(_ publicKey: P521.KeyAgreement.PublicKey) -> String {
         let data = publicKey.rawRepresentation
         

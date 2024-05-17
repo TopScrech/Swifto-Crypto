@@ -2,7 +2,7 @@ import Foundation
 import CryptoKit
 
 @Observable
-final class CryptoModel {
+public final class CryptoModel {
     let privateKey = P521.KeyAgreement.PrivateKey()
     
     var publicKey: P521.KeyAgreement.PublicKey {
