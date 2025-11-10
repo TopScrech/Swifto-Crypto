@@ -1,4 +1,4 @@
-// swift-tools-version: 5.10
+// swift-tools-version: 6.2.1
 import PackageDescription
 
 let package = Package(
@@ -14,12 +14,12 @@ let package = Package(
     products: [
         .library(
             name: "Swifto Crypto",
-            targets: ["SwiftoCrypto"]),
+            targets: ["SwiftoCrypto"]
+        )
     ],
     targets: [
         .target(
             name: "SwiftoCrypto",
-            dependencies: [],
             linkerSettings: [
                 .linkedFramework("CryptoKit")
             ]
